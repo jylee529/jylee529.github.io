@@ -1,29 +1,24 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  git, github, jekyll, markdown
 date:   2022-11-30 22:02:45 +0900
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+# 1. git, github
+- 깃은 분산 버전관리 시스템이다. 코드를 작업하다 보면 이전 버전이 필요할 때도 있고, 다른 버전과 합쳐야 할 때도 있고, 부분을 나누어서 여러명이 작업을 하고 합쳐야 할 때도 있다. 깃은 그런 작업을 쉽게 해주는 시스템이다.
+- 로컬 영역(내 개인 컴퓨터)에서 작업을 하고, 원격 영역(드라이브 같은거?)에 push로 올린다. 반대로 원격에서 pull로 가져와서 작업을 할 수도 있다.
+- 이때 원격 영역을 하는 것이 github이다. github에 push를 하면 마치 게임 패치노트처럼 작업한 내용과 짧은 코멘트가 같이 써진다. 
+- 로컬 영역에서 cmd에 git add명령어로 작업물을 staging area에 보내고 git commit -m "짧은 코멘트" 명령어로 로컬 리퍼지터리에 올라간다. 
+- 그리고 git push origin main 으로 로컬 리퍼지터리에 있는 내용이 remote 리퍼지터리로 이동한다. 
+- git branch명령어로 branch를 늘릴 수 있다. 분할하여 작업하고 git merge명령어로 합치는 방식으로 사용할 수 있다.
 
-Jekyll requires blog post files to be named according to the following format:
+# 2. jekyll
+- jekyll은 ruby 기반 정적 웹사이트 생성기 라고 한다.
+- ruby는 스크립트 언어의 일종이고, 정적웹사이트는 markdown등 다른 형식의 문서를 html로 바꿔주는거라고 한다.
+- 즉 사이트를 쉽게 만들어 주는 도구다.
 
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+# 3. markdown
+- markdown은 마크업 언어의 일종으로 html과 달리 읽고 쓰기 쉬운 문서 양식이다.
+- 본 파일도 markdown으로 쓰고 있으며 간단한 문법으로 마치 한글 문서를 상단 바 없이 다루듯 다룰 수 있다.
+- 예를 들면 #의 개수로 제목의 크기를 정할수 있고, -로 글머리를 쓸 수 있으며 *으로 가두면 굵게, **으로 가두면 기울여서 쓸 수 있다.
+- 코드는  언어를 쓰고 원하는 내용을 적은 후 ```로 가두면 된다.
